@@ -11,16 +11,16 @@ import com.negocio.repository.PacienteRepository;
 @Service
 public class PacienteService {
 
-	@Autowired
-	PacienteRepository pacienteRepository;
-	
-	public List<Paciente> listarTodo(){
-		return pacienteRepository.findAll();
-	}
-	
-	public Paciente save(Paciente paciente) {
+    @Autowired
+    PacienteRepository pacienteRepository;
+
+    public List<Paciente> listarTodo() {
+        return pacienteRepository.findAll();
+    }
+
+    public Paciente save(Paciente paciente) {
         return pacienteRepository.save(paciente);
     }
 
-	
+
 }
