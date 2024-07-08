@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EsSalud</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .footer-links {
+            bottom: 0;
+            width: 100%;
+            background-color: #24262b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #24262b;
+            padding: 80px 0;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            /* Centra horizontalmente los elementos dentro de footer-row */
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            width: 100%;
+            /* Ajusta el ancho al 100% para un diseño responsivo */
+            max-width: 300px;
+            /* Limita el ancho máximo para cada sección de enlaces */
+            padding: 0 15px;
+            margin-bottom: 20px;
+            /* Añade un margen inferior para separar las secciones en pantallas pequeñas */
+        }
+
+        .footer-links h4 {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+            font-weight: 500;
+            border-bottom: 2px solid #00CED1;
+            padding-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #BBBBBB;
+            display: block;
+            margin-bottom: 15px;
+            transition: all .3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #FFFFFF;
+            padding-left: 6px;
+        }
+
+        .social-link {
+            display: flex;
+            justify-content: center;
+            /* Centra los enlaces sociales horizontalmente */
+            flex-wrap: wrap;
+        }
+
+        .social-link a {
+            display: inline-block;
+            min-height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #FFFFFF;
+            transition: all .5s ease;
+        }
+
+        .social-link a:hover {
+            background-color: #00C3FF;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            text-transform: capitalize;
+        }
+
+        .navbar-custom {
+            background-color: rgb(42, 133, 212);
+        }
+
+        .bg-custom {
+            background-color: #E0FFFF;
+        }
+
+        .section-heading {
+            color: #2A85D4;
+        }
+
+        .custom-container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .custom-btn {
+            width: 250px;
+            height: 150px;
+            font-size: 36px;
+            background-color: rgb(0, 255, 128);
+            color: rgb(255, 128, 192);
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Logo_EsSalud.png" alt="Logo" width="100"
+                    height="35" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/inicio">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/sedes">Sedes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/especialidades">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="/lab">Laboratorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-item">EsSalud te cuida</li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contactanos">Contáctanos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="/login" target="_blank" class="btn btn-outline-warning">Saca tu cita</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <app-encabezado></app-encabezado>
+    <div _ngcontent-irc-c95="" class="banner">
+        <p style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Logo_EsSalud.png" width="800" height="300"
+                alt="Imagen centrada">
+        </p>
+    </div>
+    <div class="container">
+        <div class="row border rounded">
+            <div class="row g-0 bg-body-secondary position-relative ">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="https://w7.pngwing.com/pngs/98/590/png-transparent-physician-doctor-of-medicine-patient-health-care-doctor-electronics-microphone-service-thumbnail.png"
+                        class="w-70" alt="">
+                </div>
+                <div class="col-md-6 p-4 ps-md-5 mt-5">
+                    <h2 class="mt-0">CARDIOLOGÍA</h2>
+
+                    <p>Nos encargamos de prevenir, diagnosticar y tratar enfermedades que afectan al corazón y al
+                        aparato circulatorio.</p>
+
+                    <form class="d-flex" role="search">
+                        <a href="login" target="_blank" class="btn btn-outline-success">SACAR CITA</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row border rounded">
+            <div class="row g-0 bg-body-secondary position-relative ">
+                <div class="col-md-6 p-4 ps-md-5 mt-5">
+                    <h3 class="mt-0">¿Cuándo acudir con un cardiólogo?</h3>
+                    <p>Es recomendable acudir al Cardiólogo cuando haya presencia de agitación, dolores frecuentes en el
+                        pecho,
+                        fatiga o pérdida de aire, mareos, entre otros
+                        síntomas que podrían ser parte de una enfermedad del corazón.</p>
+                    <h3 class="mt-0">Los procedimientos de apoyo al diagnóstico que se pueden realizar en la
+                        especialidad son:</h3>
+                    <p>- EKG (electrocardiograma)</p>
+                    <p>- Riesgo quirúrgico cardiovascular</p>
+                    <p>- Prueba de esfuerzo
+                    <p>- Ecocardiograma doppler en adultos y niños</p>
+                    <p>- Holter (monitoreo EKG 24 hrs.)</p>
+                    <p>- Mapa (monitoreo de presión arterial 24 hrs.)</p>
+                    <p>- Eco Doppler</p>
+                    <p>- Levantamiento de observación</p>
+                    <p>Y más</p>
+                </div>
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="https://img.freepik.com/vector-premium/problema-corazon-humano-fondo-blanco_1308-15211.jpg"
+                        width="500" height="500" class="w-70" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <app-piedepagina></app-piedepagina>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>EsSalud</h4>
+                    <ul>
+                        <li><a href="/inicio">Nosotros</a></li>
+                        <li><a href="/sedes">Nuestras Sedes</a></li>
+                        <li><a href="/login">Saca Cita</a></li>
+                        <li><a href="/contactanos">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>EsSalud</h4>
+                    <ul>
+                        <li><a href="/inicio">Nosotros</a></li>
+                        <li><a href="/sedes">Nuestras Sedes</a></li>
+                        <li><a href="/login">Saca Cita</a></li>
+                        <li><a href="/contactanos">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/EsSaludPeruOficial/" target="_blank"
+                            class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/essaludperu/" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://twitter.com/EsSaludPeru" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://www.youtube.com/@EsSaludPeruOficial" target="_blank"
+                            class="fab fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

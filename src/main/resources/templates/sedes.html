@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EsSalud</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.footer-links {
+			bottom: 0;
+			width: 100%;
+			background-color: #24262b;
+			padding: 10px;
+			text-align: center;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			list-style: none;
+		}
+
+		body {
+			font-family: sans-serif;
+			text-transform: capitalize;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.footer {
+			background-color: #24262b;
+			padding: 80px 0;
+		}
+
+		.footer-row {
+			display: flex;
+			justify-content: center;
+			/* Centra horizontalmente los elementos dentro de footer-row */
+			flex-wrap: wrap;
+		}
+
+		.footer-links {
+			width: 100%;
+			/* Ajusta el ancho al 100% para un diseño responsivo */
+			max-width: 300px;
+			/* Limita el ancho máximo para cada sección de enlaces */
+			padding: 0 15px;
+			margin-bottom: 20px;
+			/* Añade un margen inferior para separar las secciones en pantallas pequeñas */
+		}
+
+		.footer-links h4 {
+			font-size: 20px;
+			color: #FFFFFF;
+			margin-bottom: 25px;
+			font-weight: 500;
+			border-bottom: 2px solid #00CED1;
+			padding-bottom: 10px;
+		}
+
+		.footer-links ul li a {
+			font-size: 18px;
+			text-decoration: none;
+			color: #BBBBBB;
+			display: block;
+			margin-bottom: 15px;
+			transition: all .3s ease;
+		}
+
+		.footer-links ul li a:hover {
+			color: #FFFFFF;
+			padding-left: 6px;
+		}
+
+		.social-link {
+			display: flex;
+			justify-content: center;
+			/* Centra los enlaces sociales horizontalmente */
+			flex-wrap: wrap;
+		}
+
+		.social-link a {
+			display: inline-block;
+			min-height: 40px;
+			width: 40px;
+			background-color: rgba(255, 255, 255, 0.2);
+			margin: 0 10px 10px 0;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 50%;
+			color: #FFFFFF;
+			transition: all .5s ease;
+		}
+
+		.social-link a:hover {
+			background-color: #00C3FF;
+		}
+
+		body {
+			font-family: 'Helvetica Neue', sans-serif;
+			text-transform: capitalize;
+		}
+
+		.navbar-custom {
+			background-color: rgb(42, 133, 212);
+		}
+
+		.bg-custom {
+			background-color: #E0FFFF;
+		}
+
+		.section-heading {
+			color: #2A85D4;
+		}
+
+		.custom-container {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.custom-btn {
+			width: 250px;
+			height: 150px;
+			font-size: 36px;
+			background-color: rgb(0, 255, 128);
+			color: rgb(255, 128, 192);
+			border: none;
+			cursor: pointer;
+			margin: 10px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Logo_EsSalud.png" alt="Logo" width="100"
+					height="35" class="d-inline-block align-text-top">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/inicio">Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/sedes">Sedes</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Servicios
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/especialidades">Especialidades</a></li>
+							<li><a class="dropdown-item" href="/lab">Laboratorios</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li class="dropdown-item">EsSalud te cuida</li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link active" href="/contactanos">Contáctanos</a>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<a href="/login" target="_blank" class="btn btn-outline-warning">Saca tu cita</a>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<br></br>
+
+
+	<div class="container">
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="col">
+				<div class="card h-100" href="https://maps.app.goo.gl/LHLSAMv8CV6s9oJK6">
+					<img src="https://lh5.googleusercontent.com/p/AF1QipM8bU9daolNcZreStXrBpdGPsunAz8Iv3-eV-5Z=w408-h301-k-no"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Centro De Atención Primaria III San Juan de
+							Miraflores</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/e44m3hMQCDR9DgEfA" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;"> Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh5.googleusercontent.com/p/AF1QipPjkxB6cbPN7rQ2rACbyvq0DBjikgg8B5Gsna-z=w408-h306-k-no"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Policlínico Essalud Próceres - Citas</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/4MNPv3pk5wqB8Fpq7" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh5.googleusercontent.com/p/AF1QipPk5r59nZ0bQLeJCbipjMWfj5GH3sMYJrNSyQzM=w427-h240-k-no"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">CAP III ESSALUD, Surquillo</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/zCCystDS5jk1vK2j8" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipORiZIWMKnO57idRmAZTDvrsHLgm8ycuzMajWU7=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">EsSalud - Seguro Social</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/AjyRsGAnKESqv3tk8" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;"><small class="text-body-secondary">
+								Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh4.googleusercontent.com/1bXR9Dv4DrmhwKpxta-rovAn7slr-M061XnkKrU2cXp6loqvtujoBOBi71hme1hY=w408-h408-k-no"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Hospital EsSalud Suarez</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/CxbQVEqzm4BANobs8" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipOQCLRfkxf4VSyURZFGW5o4qHs8t95ki5agdQcd=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">EsSalud - Sede Central</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/cPV5cfXYaJVUj6Ge6" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipOlV69M8WH32OIpJ2kLShZUMiZLRY1Aw3AlWUSf=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Policlínico Juan José Rodríguez Lazo</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/tx36cUuESwafYVdC9" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipPkr5gBRJRm21ahhadBDqV-_vSNK9er7BeZpiZA=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Hospital EsSalud Uldarico Rocca Fernández
+						</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/4kM7VgzKR43jKw5B6" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipMZkluC2DhV0dsnkduUU90INy2r7D70DDrtBICU=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Hospital EsSalud Aurelio Díaz Ufano</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/utYasUzkhfmvMEjD6" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipM-aJTchkUdao0lTr9v8sPIXnyImXgzMorSUIzf=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Centro de Atención Primaria San Isidro
+							Essalud
+						</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/ECxpVqJ7SfXmpqPy6" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipPFYSo22vyBZvZvCWcq2rb2MOhbo5vaMX6r5eU=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">ESSALUD</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/DYVzkY3UMUPeWH1x7" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipPd_5Pb_dITTuCFz42Qtb4SonBUuiV-Zi4Th9O7=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Complejo Arenales de Essalud</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/HkyfGKoQP6uKEA8HA" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="https://lh3.googleusercontent.com/p/AF1QipNvMrsMmRK-wcGhIPhJYMYxSt7Uymlgp9BXHMN-=s680-w680-h510"
+						class="card-img-top" width="10" height="200">
+					<div class="card-body">
+						<h5 class="card-title" style="text-align: center;">Hospital EsSalud Alberto Sabogal Sologuren
+						</h5>
+						<hr>
+						<a href="https://maps.app.goo.gl/FgsYerc8hKud1fEe7" target="_blank"
+							class="btn btn-outline-success" style="display: block; margin: 0 auto;">Ubicación</a>
+						<p class="card-text"></p>
+						<div class="card-footer" style="text-align: center;">
+							<small class="text-body-secondary">Lunes a Sábado: 7am a 7pm</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<br></br>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-links">
+					<h4>EsSalud</h4>
+					<ul>
+						<li><a href="/inicio">Nosotros</a></li>
+						<li><a href="/sedes">Nuestras Sedes</a></li>
+						<li><a href="/login">Saca Cita</a></li>
+						<li><a href="/contactanos">Contactanos</a></li>
+					</ul>
+				</div>
+				<div class="footer-links">
+					<h4>EsSalud</h4>
+					<ul>
+						<li><a href="/inicio">Nosotros</a></li>
+						<li><a href="/sedes">Nuestras Sedes</a></li>
+						<li><a href="/login">Saca Cita</a></li>
+						<li><a href="/contactanos">Contactanos</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-links">
+					<h4>Síguenos</h4>
+					<div class="social-link">
+						<a href="https://www.facebook.com/EsSaludPeruOficial/" target="_blank"
+							class="fab fa-facebook-f"></a>
+						<a href="https://www.instagram.com/essaludperu/" target="_blank" class="fab fa-instagram"></a>
+						<a href="https://twitter.com/EsSaludPeru" target="_blank" class="fab fa-twitter"></a>
+						<a href="https://www.youtube.com/@EsSaludPeruOficial" target="_blank"
+							class="fab fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
